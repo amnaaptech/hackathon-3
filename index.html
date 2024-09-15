@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form action="" id="resume">
+        <fieldset>
+            <legend>PERSONAL INFORMATION </legend>
+            <Label for="name">Name: </Label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <Label for="email">Email: </Label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <Label for="phone">Phone: </Label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone no" required><br>
+
+            <Label for="address">Address: </Label>
+            <input type="address" id="address" name="address" placeholder="Enter your address" required><br>
+
+
+                <label for="profilepick">Profile Picture:</label>
+                <input type="file" id="profilepick" accept="image/*">
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <Label for="education">Education:</Label>
+            <textarea name="education" id="education" rows="4" required placeholder="Enter your education"></textarea>
+            <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <Label for="experience">Experience:</Label>
+            <textarea name="experience" id="experience" rows="4" required
+                placeholder="Enter your experience"></textarea> <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>SKILLS</legend>
+            <Label for="skills">Skills:</Label>
+            <input type="text" id="Skills" rows="4" placeholder="Add a skill"><br>
+            <button id="addskillbtn">Add</button>
+            <button id="remskillbtn">Remove</button>
+            <div id="skills">
+                <ul id="skills-list"></ul>
+            </div>
+        </fieldset>
+
+     
+
+        <button type="submit" id="createResumeBtn">Create Resume</button>
+
+        <div id="resumeOutput"></div>
+    </form>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
